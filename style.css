@@ -81,6 +81,7 @@ nav{
 
 .info h1{
     color: #C2E6FF;
+    font-size: 45px;
 }
 
 .info p{
@@ -89,7 +90,12 @@ nav{
 
 .contact{
     background-color: var(--button);
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 0.2rem 1rem;
+}
+
+.contact a{
+    color: #000000;
 }
 
 .header-picture{
