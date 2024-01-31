@@ -135,7 +135,7 @@ nav{
 .header{
     max-width: 1100px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 7rem 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -166,7 +166,7 @@ header{
 .info p{
     color: var(--textcolor);
     font-family: 'Margarine-Regular', sans-serif;
-    font-size: 16.5px;
+    font-size: 16px;
 }
 
 .header-picture{
@@ -178,7 +178,7 @@ header{
 .competence{
     max-width: 1100px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 7rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
