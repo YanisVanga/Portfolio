@@ -224,3 +224,20 @@ header{
     min-width: 18px;
     min-height: 18px;
 }
+
+/* Projet */
+.myProjects{
+    max-width: 1100px;
+    margin: auto;
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projectTitle{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--textTitle);
+    font-size: 25px;
+}
