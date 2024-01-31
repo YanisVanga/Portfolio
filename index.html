@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -20,10 +21,15 @@
             <li class="link"><a href="#">Projet</a></li>
             <li class="link"><a href="#">Cours</a></li>
         </ul>
-        <button class="darkMode">Light Mode</button>
+        <div id="darkMode" onclick="script.changeMode()">
+            <img src="images/moon.svg" id="imgMoonBtnDarkMode">
+            <div id="darkModeBtn"></div>
+            <img src="images/sun.svg" id="imgSunBtnDarkMode">
+        </div>
     </nav>
 
-    <div class="header">
+    <!--
+    <header class="header">
         <div class="info">
             <h1>Vangalen Yanis</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -31,7 +37,7 @@
             </p>
 
             <ul class="header-contact">
-                <li class="contact"><a href="#">GitHub</a></li>
+                <li class="contact"><a href="https://github.com/YanisVanga">GitHub</a></li>
                 <li class="contact"><a href="#">Email</a></li>
                 <li class="contact"><a href="#">Linkedin</a></li>
                 <li class="contact"><a href="#">Discord</a></li>
@@ -41,9 +47,10 @@
         <div class="header-picture">
             <img src="images/Photo.jpeg" alt="">
         </div>
-    </div>
+    </header>-->
 
 
-    <script src="script.js"></script>
+
+    <script>let script = new Script()</script>
 </body>
 </html>

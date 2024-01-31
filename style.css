@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik Mono One');
 
 :root{
-    --background: #0D1520;
-    --color: #FFFFFF;
-    --button: #0090FF;
+    --background: #111111;
+    --textcolor: #EEEEEE;
+    --textTitle: #B4B4B4;
+
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
 }
 
 *{
@@ -17,7 +22,7 @@
 img{
     width: 100%;
     display: flex;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 a{
@@ -25,7 +30,6 @@ a{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     background-color: var(--background);
 }
 
@@ -40,7 +44,7 @@ nav{
 }
 
 .nav-picture{
-    max-width: 100px;
+    max-width: 75px;
 }
 
 .nav-link{
@@ -53,24 +57,78 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: var(--color);
+    color: var(--textcolor);
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-.darkMode{
-    color: var(--color);
-    background-color: var(--button);
-    padding: 0.5rem 1rem;
-    font-size: 15px;
-    border-radius: 5px;
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0090FF;
+    transition: all 0.3s ease;
 }
 
+.link a:hover::after{
+    width: 100%;
+}
+
+#darkMode{
+    background-color: #000000;
+    width: 6.5rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#darkModeBtn{
+    background-color: #FFFFFF;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 1.5rem;
+    margin-left: 3.85rem;
+    z-index: 1;
+    transition: transform .3s ease;
+}
+
+#imgMoonBtnDarkMode{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: fixed;
+    margin-left: 1rem;
+}
+
+#imgSunBtnDarkMode{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: fixed;
+    margin-left: 4rem;
+}
+
+.modeDark{
+    transform: translateX(-3.5rem);
+}
+
+/* Header */
 .header{
     max-width: 1200px;
     margin: auto;
+    padding: 5rem 2rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 5rem;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
 }
 
 .header-contact{
@@ -79,13 +137,19 @@ nav{
     gap: 3rem;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .info h1{
-    color: #C2E6FF;
+    color: var(--textTitle);
     font-size: 45px;
 }
 
 .info p{
-    color: #70B8FF;
+    color: var(--text);
 }
 
 .contact{
@@ -106,3 +170,4 @@ nav{
 .header-picture img{
     border-radius: 100px;
 }
+
