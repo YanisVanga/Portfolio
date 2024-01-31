@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik Mono One');
+@font-face {
+    font-family: Margarine-Regular;
+    src: url("font/Margarine-Regular.ttf");
+}
 
 :root{
     --background: #111111;
     --textcolor: #EEEEEE;
     --textTitle: #B4B4B4;
-
-    --dark-color: #2b2b2b;
-    --dark-icon-color: #fff;
-    --light-color: #f7f7f7;
-    --light-icon-color: #FFDE59;
+    --buttonBacground: #000000;
 }
 
 *{
@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-img{
+#imgHead{
     width: 100%;
     display: flex;
     border-radius: 20px;
@@ -77,7 +77,7 @@ nav{
 }
 
 #darkMode{
-    background-color: #000000;
+    background-color: var(--buttonBacground);
     width: 6.5rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -115,7 +115,7 @@ nav{
 
 /* Header */
 .header{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     padding: 5rem 2rem;
     display: flex;
@@ -131,43 +131,78 @@ header{
     gap: 2rem;
 }
 
-.header-contact{
-    list-style: none;
+.info{
     display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 500px;
+    text-align: center;
+}
+
+.info h1{
+    color: var(--textTitle);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 42px;
+}
+
+.info p{
+    color: var(--textcolor);
+    font-family: 'Margarine-Regular', sans-serif;
+    font-size: 16.5px;
+}
+
+.header-picture{
+    min-width: 350px;
+    max-width: 300px;
+}
+
+/* Compétence */
+.competence{
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
 }
 
-.info{
+.competenceTitle{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--textTitle);
+    font-size: 25px;
+}
+
+.competenceInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.competenceCat{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.info h1{
+.classTitle{
+    font-size: 17px;
+    font-family: 'Rubik Mono One', sans-serif;
     color: var(--textTitle);
-    font-size: 45px;
+    margin-bottom: 0.5rem;
 }
 
-.info p{
-    color: var(--text);
+.item{
+    display: flex;
+    gap: 0.8rem;
 }
 
-.contact{
-    background-color: var(--button);
-    border-radius: 20px;
-    padding: 0.2rem 1rem;
+.item p{
+    font-size: 17px;
+    font-family: 'Margarine-Regular', sans-serif;
+    color: var(--textcolor);
 }
 
-.contact a{
-    color: #000000;
+.item img{
+    min-width: 18px;
+    min-height: 18px;
 }
-
-.header-picture{
-    min-width: 300px;
-    max-width: 250px;
-}
-
-.header-picture img{
-    border-radius: 100px;
-}
-
