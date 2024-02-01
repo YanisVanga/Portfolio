@@ -11,7 +11,7 @@
 <body>
 <!--
     <div class="cursor" id="cursor"></div>-->
-    <nav>
+    <nav id="top">
         <div class="nav-picture">
             <a href="#">
                 <img src="images/Photo.jpeg" id="imgHead">
@@ -19,10 +19,10 @@
         </div>
 
         <ul class="nav-link">
-            <li class="link"><a href="#">Accueil</a></li>
-            <li class="link"><a href="#">Language</a></li>
-            <li class="link"><a href="#">Projet</a></li>
-            <li class="link"><a href="#">Cours</a></li>
+            <li id="link1" class="link"><a onclick="script.scrollTo(1)" href="#">Accueil</a></li>
+            <li id="link2" class="link"><a onclick="script.scrollTo(2)" href="#">Compétence</a></li>
+            <li id="link3" class="link"><a onclick="script.scrollTo(3)" href="#">Projet</a></li>
+            <li id="link4" class="link"><a href="#">Cours</a></li>
         </ul>
         <div id="darkMode" onclick="script.changeMode()">
             <img src="images/moon.svg" id="imgMoonBtnDarkMode">
@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header id="head" class="header">
         <div class="info">
             <h1>Bonjour <br> et bienvenue</h1>
             <p>Je me présente, je m’appelle Vangalen Yanis, je suis un étudiant en informatique qui aime la découverte. Je suis plus particulièrement passionné pour le développement web et mobile.</p>
@@ -39,9 +39,10 @@
         <div class="header-picture">
             <img src="images/OBJECTS.svg">
         </div>
+        <div class="flou"></div>
     </header>
 
-    <section class="competence">
+    <section id="competence" class="competence">
         <h1 class="competenceTitle">Compétence</h1>
         <div class="competenceInfo">
             <div class="competenceCat">
@@ -99,24 +100,28 @@
         </div>
     </section>
 
-    <section class="myProjects">
+    <section id="project" class="myProjects">
         <h1 class="projectTitle">mes projets</h1>
-        <div class="card">
-            <div class="cardPhoto"></div>
-            <p class="cardTitle"></p>
-            <p class="cardDesc"></p>
-        </div>
-        <div class="card">
-            <div class="cardPhoto"></div>
-            <p class="cardTitle"></p>
-            <p class="cardDesc"></p>
-        </div>
-        <div class="card">
-            <div class="cardPhoto"></div>
-            <p class="cardTitle"></p>
-            <p class="cardDesc"></p>
+        <div class="allCard">
+            <div class="card">
+                <div class="cardPhoto"></div>
+                <p class="cardTitle">le loup et le mouton</p>
+                <p class="cardDesc"></p>
+            </div>
+            <div class="card">
+                <div class="cardPhoto"></div>
+                <p class="cardTitle">mastermind</p>
+                <p class="cardDesc"></p>
+            </div>
+            <div class="card">
+                <div class="cardPhoto"></div>
+                <p class="cardTitle">le chôlage</p>
+                <p class="cardDesc"></p>
+            </div>
         </div>
     </section>
+
+
 
 
     <script>let script = new Script()</script>

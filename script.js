@@ -5,6 +5,16 @@ class Script{
         this.imgBtnDarkMode = document.getElementById("imgBtnDarkMode");
         this.btnDarkMode = document.getElementById("darkModeBtn");
 
+        this.link1 = document.getElementById("link1");
+        this.link2 = document.getElementById("link2");
+        this.link3 = document.getElementById("link3");
+        this.link4 = document.getElementById("link4");
+
+        this.top = document.getElementById("top");
+        this.header = document.getElementById("head");
+        this.competence = document.getElementById("competence");
+        this.project = document.getElementById("project");
+
         this.color = document.querySelector(':root');
 
         /*
@@ -27,6 +37,18 @@ class Script{
             this.color.style.setProperty('--buttonBackground','#000000');
             this.color.style.setProperty('--background','#111111');
 
+        }
+    }
+
+    scrollTo(val){
+        if(val === 0){
+            this.top.scrollIntoView({ behavior : "smooth"})
+        }else if(val === 1){
+            this.header.scrollIntoView({ behavior : "smooth"})
+        }else if(val === 2){
+            this.competence.scrollIntoView({ behavior : "smooth"})
+        }else if(val === 3){
+            this.project.scrollIntoView({ behavior : "smooth"})
         }
     }
 }
