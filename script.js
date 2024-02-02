@@ -17,6 +17,8 @@ class Script{
 
         this.color = document.querySelector(':root');
 
+        this.card = document.getElementById("card1");
+
         /*
         var cursor = document.getElementById("cursor");
         document.body.addEventListener("mousemove", function(e) {
