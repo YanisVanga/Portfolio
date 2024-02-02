@@ -14,6 +14,7 @@ class Script{
         this.header = document.getElementById("head");
         this.competence = document.getElementById("competence");
         this.project = document.getElementById("project");
+        this.contact = document.getElementById("contact");
 
         this.color = document.querySelector(':root');
 
@@ -51,6 +52,8 @@ class Script{
             this.competence.scrollIntoView({ behavior : "smooth"})
         }else if(val === 3){
             this.project.scrollIntoView({ behavior : "smooth"})
+        }else if(val === 4){
+            this.contact.scrollIntoView({ behavior : "smooth"})
         }
     }
 }

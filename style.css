@@ -15,6 +15,7 @@
     --flou: #289DF2;
     --border: #606060;
     --borderLang: #7B7B7B;
+    --separator: #3A3A3A;
 }
 
 /*
@@ -404,4 +405,71 @@ header{
 #img3{
     background: url("images/cholage.png") no-repeat center;
     background-size: contain;
+}
+
+/* Contact */
+.contact{
+    max-width: 1400px;
+    margin: auto;
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.contactTitle{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--textTitle);
+    font-size: 25px;
+}
+
+.allContact{
+    display: flex;
+    gap: 5rem;
+}
+
+.logo{
+    width: 20rem;
+    height: 20rem;
+    background: url("images/Vector.svg") no-repeat center;
+    background-size: contain;
+}
+
+.separator{
+    width: 0.5rem;
+    height: 20rem;
+    background-color: var(--separator);
+    border-radius: 2rem;
+}
+
+.contactLink{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.linkContact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: var(--backgroudCard);
+    border: 2px solid var(--borderLang);
+}
+
+.linkContact img{
+    margin-left: 1rem;
+    width: 2.5rem;
+}
+
+.linkContact p{
+    font-family: 'Margarine-Regular', sans-serif;
+    font-size: 20px;
+    color: var(--textcolor);
 }

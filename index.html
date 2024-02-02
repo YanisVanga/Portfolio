@@ -22,7 +22,7 @@
             <li id="link1" class="link"><a onclick="script.scrollTo(1)" href="#">Accueil</a></li>
             <li id="link2" class="link"><a onclick="script.scrollTo(2)" href="#">Compétence</a></li>
             <li id="link3" class="link"><a onclick="script.scrollTo(3)" href="#">Projet</a></li>
-            <li id="link4" class="link"><a href="#">Cours</a></li>
+            <li id="link4" class="link"><a onclick="script.scrollTo(4)" href="#">Contact</a></li>
         </ul>
         <div id="darkMode" onclick="script.changeMode()">
             <img src="images/moon.svg" id="imgMoonBtnDarkMode">
@@ -175,7 +175,9 @@
                 <p class="cardTitle">Mastermind</p>
                 <p class="cardDesc">Le Mastermind est jeu de réflexion.
 
-                    Le but est de trouver le code de 5 couleurs caché en 15 coups maximum. Pour cela, vous avez des indicateurs pour aider a trouver le code, point blanc pour les couleur bien placé et point noir pour cela mal placé, mais dans le code.</p>
+                    Le but est de trouver le code de 5 couleurs caché en 15 coups maximum.
+                    Pour cela, vous avez des indicateurs pour aider a trouver le code, point blanc pour les couleur bien placé et point noir
+                    pour ceux mal placé, mais dans le code.</p>
                 <div class="language">
                     <div class="lang">
                         <img src="images/Python.svg">
@@ -205,11 +207,26 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
+    <section id="contact" class="contact">
+        <h1 class="contactTitle">Contact</h1>
+        <div class="allContact">
+            <div class="logo"></div>
+            <div class="separator"></div>
+            <div class="contactLink">
+                <a class="linkContact" href="mailto:yanis.vang@gmail.com">
+                    <img src="images/mail.svg">
+                    <p>yanis.vang@gmail.com</p>
+                </a>
+                <a class="linkContact" href="https://github.com/YanisVanga">
+                    <img src="images/GitHub.svg">
+                    <p>Github</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <script>let script = new Script()</script>
 </body>
