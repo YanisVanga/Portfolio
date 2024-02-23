@@ -349,6 +349,7 @@ header{
     background-color: var(--backgroudCard);
     border-radius: 1.5rem;
     min-height: 35rem;
+    transition: transform .3s ease;
 }
 
 .cardTitle{
@@ -405,6 +406,10 @@ header{
 #img3{
     background: url("images/cholage.png") no-repeat center;
     background-size: contain;
+}
+
+.card:hover{
+    transform: scale(1.03);
 }
 
 /* Contact */
