@@ -181,15 +181,21 @@ header{
     max-width: 300px;
 }
 
-.flou{
-    background-color: var(--flou);
+.container {
     position: absolute;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 5rem;
-    filter: blur(125px);
-    z-index: -1;
+    width: 1250px;
+    height: 500px;
+}
 
+.box {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    border-radius: 10em;
+    background-color: var(--flou);
+    z-index: -1;
+    transition: transform .3s ease;
+    filter: blur(100px);
 }
 
 /* Compétence */
