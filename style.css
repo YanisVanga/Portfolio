@@ -4,10 +4,14 @@
     src: url("font/Margarine-Regular.ttf");
 }
 
+/*
+Init
+*/
+
 :root{
     --background: #111111;
-    --textcolor: #EEEEEE;
-    --textTitle: #B4B4B4;
+    --textcolor: #B4B4B4;
+    --textTitle: #EEEEEE;
     --buttonBackground: #000000;
     --colorOver: #0090FF;
     --backgroudCard: #2A2A2A;
@@ -17,23 +21,6 @@
     --borderLang: #7B7B7B;
     --separator: #3A3A3A;
 }
-
-/*
-.cursor{
-    position: fixed;
-    border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    pointer-events: none;
-    left: -100px;
-    top: 50%;
-    background-color: var(--colorOver);
-    z-index: -1;
-    border: none;
-    height: 60px;
-    width: 60px;
-    transition: all 3ms ease-out;
-    filter: blur(50px);
-}*/
 
 *{
     padding: 0;
@@ -56,6 +43,10 @@ a{
 body{
     background-color: var(--background);
 }
+
+/*
+Header
+*/
 
 nav{
     max-width: 1400px;
@@ -81,7 +72,7 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: var(--textcolor);
+    color: var(--textTitle);
     font-family: 'Rubik Mono One', sans-serif;
 }
 
@@ -115,7 +106,7 @@ nav{
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 1.5rem;
-    margin-left: 3.85rem;
+    margin-left: 0.4rem;
     z-index: 1;
     transition: transform .3s ease;
 }
@@ -135,10 +126,12 @@ nav{
 }
 
 .modeDark{
-    transform: translateX(-3.5rem);
+    transform: translateX(3.5rem);
 }
 
-/* Header */
+/*
+Head
+*/
 .header{
     max-width: 1300px;
     margin: auto;
@@ -185,6 +178,7 @@ header{
     position: absolute;
     width: 1250px;
     height: 500px;
+    z-index: -1;
 }
 
 .box {
@@ -193,12 +187,14 @@ header{
     height: 8em;
     border-radius: 10em;
     background-color: var(--flou);
-    z-index: -1;
     transition: transform .3s ease;
     filter: blur(100px);
 }
 
-/* Compétence */
+/*
+Compétence
+*/
+
 .competence{
     max-width: 1200px;
     margin: auto;
@@ -249,7 +245,15 @@ header{
     min-height: 18px;
 }
 
-/* Projet */
+.item:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 2px var(--flou));
+}
+
+/*
+Projet
+*/
+
 .myProjects{
     max-width: 1400px;
     margin: auto;
@@ -267,7 +271,6 @@ header{
 }
 
 /*
-
 .allCard{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -416,9 +419,13 @@ header{
 
 .card:hover{
     transform: scale(1.03);
+    filter: drop-shadow(0px 0px 10px var(--flou));
 }
 
-/* Contact */
+/*
+Contact
+*/
+
 .contact{
     max-width: 1400px;
     margin: auto;
@@ -464,14 +471,19 @@ header{
     gap: 2rem;
 }
 
-.linkContact{
+.linkContact,.linkContactCVDowload{
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
     border-radius: 5rem;
+    height: 5rem;
     background-color: var(--backgroudCard);
     border: 2px solid var(--borderLang);
+}
+
+.linkContact{
+    padding: 2rem;
 }
 
 .linkContact img{
@@ -484,3 +496,39 @@ header{
     font-size: 20px;
     color: var(--textcolor);
 }
+
+.cv{
+    display: flex;
+    gap: 1rem;
+}
+
+.linkContactCVDowload{
+    width: 5rem;
+}
+
+.linkContactCVDowload img{
+    margin: auto;
+    width: 2rem;
+}
+
+.linkContact:hover,.linkContactCVDowload:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0px 0px 6px var(--flou));
+}
+
+/*
+.cursor{
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    background-color: var(--colorOver);
+    z-index: -1;
+    border: none;
+    height: 60px;
+    width: 60px;
+    transition: all 3ms ease-out;
+    filter: blur(50px);
+}*/

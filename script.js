@@ -63,15 +63,18 @@ class Script{
 
     changeMode(){
         if(this.color.style.getPropertyValue('--background') === '#111111'){
-            this.btnDarkMode.classList.add("modeDark");
-            this.color.style.setProperty('--buttonBackground','#FFE500');
-            this.color.style.setProperty('--background','#FFFFFF');
-            
-        }else{
             this.btnDarkMode.classList.remove("modeDark");
+            this.color.style.setProperty('--buttonBackground','#FFE500');
+            this.color.style.setProperty('--background','##FCFCFC');
+            this.color.style.setProperty('--textTitle','#202020');
+            this.color.style.setProperty('--textcolor','#646464');
+
+        }else{
+            this.btnDarkMode.classList.add("modeDark");
             this.color.style.setProperty('--buttonBackground','#000000');
             this.color.style.setProperty('--background','#111111');
-
+            this.color.style.setProperty('--textTitle','#EEEEEE');
+            this.color.style.setProperty('--textcolor','#B4B4B4');
         }
     }
 
