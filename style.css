@@ -348,17 +348,25 @@ Projet
 }*/
 
 .allCard{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    /*
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    gap: 50px;*/
 }
 
 .card{
     background-color: var(--backgroudCard);
     border-radius: 1.5rem;
     min-height: 35rem;
+    min-width: calc(1300px /3);
+    max-width: calc(1300px /3);
     transition: transform .3s ease;
+    margin: auto;
 }
 
 .cardTitle{
@@ -532,3 +540,12 @@ Contact
     transition: all 3ms ease-out;
     filter: blur(50px);
 }*/
+
+@media (max-width: 1400px) {
+    .container{
+        width: 750px;
+    }
+    .allCard{
+        grid-template-columns: repeat(2,2fr);
+    }
+}
