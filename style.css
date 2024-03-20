@@ -561,7 +561,7 @@ Contact
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
     .container{
         width: 650px;
     }
@@ -606,5 +606,134 @@ Contact
     }
     .nav-link{
         gap: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .container{
+        width: 400px;
+        height: 550px;
+    }
+    .header{
+        flex-direction: column;
+        padding: 3em 0 0 0;
+    }
+    .box{
+        width: 5em;
+        height: 5em;
+    }
+    .allContact{
+        gap: 5rem;
+    }
+    .logo{
+        width: 10rem;
+        height: 10rem;
+    }
+    .separator{
+        height: 10rem;
+    }
+    .contactLink{
+        width: 10rem;
+        height: 10rem;
+        gap: 1rem;
+    }
+    .linkContact,.linkContactCVDowload{
+        gap: 0.5rem;
+        padding: 0.5rem;
+        height: 2.5rem;
+    }
+    .linkContact{
+        padding: 1rem;
+    }
+    .linkContact img{
+        margin-left: 0.5rem;
+        width: 1.75rem;
+    }
+    .linkContact p{
+        font-size: 10px;
+    }
+    .cv{
+        gap: 0.5rem;
+    }
+    .linkContactCVDowload{
+        width: 2.5rem;
+    }
+    .linkContactCVDowload img{
+        width: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 300px;
+    }
+    .competenceInfo{
+        display: grid;
+        justify-content: center;
+        gap: 3em;
+        grid-template-columns: repeat(2,2fr);
+    }
+    .competenceCat{
+        width: 9em;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .info h1{
+        font-size: 25px;
+    }
+    .info p{
+        font-size: 10px;
+    }
+    .header-picture{
+        min-width: 350px;
+        max-width: 300px;
+    }
+
+
+
+
+
+
+
+    .allContact{
+        gap: 2rem;
+    }
+    .logo{
+        width: 5rem;
+        height: 5rem;
+    }
+    .separator{
+        height: 5rem;
+    }
+    .contactLink{
+        width: 5rem;
+        height: 5rem;
+        gap: 0.5rem;
+    }
+    .linkContact,.linkContactCVDowload{
+        gap: 0.25rem;
+        padding: 0.25rem;
+        height: 1.25rem;
+    }
+    .linkContact{
+        padding: 0.5rem;
+    }
+    .linkContact img{
+        margin-left: 0.25rem;
+        width: 0.82rem;
+    }
+    .linkContact p{
+        font-size: 5px;
+    }
+    .cv{
+        gap: 0.25rem;
+    }
+    .linkContactCVDowload{
+        width: 1.25rem;
+    }
+    .linkContactCVDowload img{
+        width: 0.5rem;
     }
 }
