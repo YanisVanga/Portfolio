@@ -11,6 +11,7 @@ class Script{
         this.link4 = document.getElementById("link4");
 
         this.top = document.getElementById("top");
+        this.menu = document.getElementById("menu");
         this.header = document.getElementById("head");
         this.competence = document.getElementById("competence");
         this.project = document.getElementById("project");
@@ -59,6 +60,16 @@ class Script{
         }
         startAnimation(); // Démarrer l'animation initiale
         setInterval(startAnimation, 5000); // Déclencher une nouvelle animation toutes les 2 secondes
+
+        this.menu.addEventListener("click", () => {
+            this.top.classList.toggle("active");
+        })
+        document.addEventListener("scroll", () => {
+            if(this.top.classList.contains("active")){
+                this.top.classList.toggle("active");
+            }
+        })
+
     }
 
     changeMode(){

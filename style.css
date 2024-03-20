@@ -58,8 +58,19 @@ nav{
     gap: 2rem;
 }
 
-.nav-picture{
+.nav-picture img{
     max-width: 75px;
+}
+
+.nav-picture{
+    display: flex;
+    gap: 2em;
+}
+
+#menu{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link{
@@ -547,5 +558,53 @@ Contact
     }
     .allCard{
         grid-template-columns: repeat(2,2fr);
+    }
+}
+
+@media (max-width: 1050px) {
+    .container{
+        width: 650px;
+    }
+    .allCard{
+        grid-template-columns: repeat(1,3fr);
+    }
+    #menu{
+        display: block;
+        margin-left: 6px;
+        width: 45px;
+    }
+    #menu:before{
+        content: "\2630";
+        font-size: 3em;
+        color: var(--textTitle);
+    }
+    .active #menu:before{
+        content: "\2715";
+        font-size: 3em;
+        color: var(--textTitle);
+    }
+    #top ul{
+        z-index: 1000;
+        position: fixed;
+        left: -100%;
+        top: 130px;
+        flex-direction: column;
+        background: var(--background);
+        width: 15em;
+        border-radius: 0 20px 20px 0;
+        border-width: 0.5px 0.5px 0.5px 0;
+        border-style: solid;
+        border-color:var(--border);
+        transition: .3s;
+    }
+    #top ul li{
+        margin: 1em 0 1em 0;
+        vertical-align: middle;
+    }
+    #top.active ul{
+        left: -31px;
+    }
+    .nav-link{
+        gap: 0;
     }
 }
