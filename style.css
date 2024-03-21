@@ -256,6 +256,11 @@ Compétence
     min-height: 18px;
 }
 
+.item svg{
+    min-width: 24px;
+    min-height: 24px;
+}
+
 .item:hover{
     transform: scale(1.1);
     filter: drop-shadow(1px 1px 2px var(--flou));
@@ -412,6 +417,7 @@ Projet
     color: var(--textcolor);
     font-family: 'Margarine-Regular', sans-serif;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     padding: 0.2rem 0.5rem;
 }
@@ -470,8 +476,12 @@ Contact
 .logo{
     width: 20rem;
     height: 20rem;
-    background: url("images/Vector.svg") no-repeat center;
     background-size: contain;
+}
+
+.logo svg{
+    width: 100%;
+    height: 100%;
 }
 
 .separator{
@@ -503,11 +513,14 @@ Contact
 
 .linkContact{
     padding: 2rem;
+    display: flex;
+    align-items: center;
 }
 
-.linkContact img{
+.linkContact svg{
     margin-left: 1rem;
-    width: 2.5rem;
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .linkContact p{
@@ -528,8 +541,9 @@ Contact
     align-items: center;
 }
 
-.linkContactCVDowload img{
-    width: 2rem;
+.linkContactCVDowload svg{
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .linkContact:hover,.linkContactCVDowload:hover{
@@ -650,9 +664,10 @@ Contact
     .linkContact{
         padding: 1rem;
     }
-    .linkContact img{
+    .linkContact svg{
         margin-left: 0.5rem;
-        width: 1.75rem;
+        min-width: 20px;
+        min-height: 20px;
     }
     .linkContact p{
         font-size: 10px;
@@ -663,8 +678,9 @@ Contact
     .linkContactCVDowload{
         width: 2.5rem;
     }
-    .linkContactCVDowload img{
-        width: 1rem;
+    .linkContactCVDowload svg{
+        min-width: 20px;
+        min-height: 20px;
     }
 }
 
