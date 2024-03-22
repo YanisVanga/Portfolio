@@ -21,6 +21,7 @@ class Script{
 
         this.card = document.getElementById("card1");
 
+        this.color.style.setProperty('--background','#111111');
         /*
         var cursor = document.getElementById("cursor");
         document.body.addEventListener("mousemove", function(e) {
@@ -79,7 +80,6 @@ class Script{
             this.color.style.setProperty('--background','##FCFCFC');
             this.color.style.setProperty('--textTitle','#202020');
             this.color.style.setProperty('--textcolor','#646464');
-
         }else{
             this.btnDarkMode.classList.add("modeDark");
             this.color.style.setProperty('--buttonBackground','#000000');
