@@ -17,6 +17,8 @@ class Script{
         this.project = document.getElementById("project");
         this.contact = document.getElementById("contact");
 
+        this.container = document.getElementById("container");
+
         this.color = document.querySelector(':root');
 
         this.card = document.getElementById("card1");
@@ -75,17 +77,46 @@ class Script{
 
     changeMode(){
         if(this.color.style.getPropertyValue('--background') === '#111111'){
+            //Light
             this.btnDarkMode.classList.remove("modeDark");
             this.color.style.setProperty('--buttonBackground','#FFE500');
-            this.color.style.setProperty('--background','##FCFCFC');
+            this.color.style.setProperty('--background','#FCFCFC');
+
             this.color.style.setProperty('--textTitle','#202020');
-            this.color.style.setProperty('--textcolor','#646464');
+            this.color.style.setProperty('--textcolor','#7B7B7B');
+
+            this.color.style.setProperty('--figma','#EEEEEE');
+            this.color.style.setProperty('--canva','url(#linearCanva)');
+            this.color.style.setProperty('--html','url(#linearHtml)');
+            this.color.style.setProperty('--css','url(#linearCss)');
+            this.color.style.setProperty('--js','#FFC700');
+            this.color.style.setProperty('--android','#42FF00');
+            this.color.style.setProperty('--php','#9086FF');
+            this.color.style.setProperty('--java','url(#linearJava)');
+            this.color.style.setProperty('--postrgessql','#6D96FF');
+            this.color.style.setProperty('--python','url(#linearPython)');
+            this.color.style.setProperty('--github','#EEEEEE');
+
+            this.container.style.display = "none";
         }else{
+            //Dark
             this.btnDarkMode.classList.add("modeDark");
             this.color.style.setProperty('--buttonBackground','#000000');
             this.color.style.setProperty('--background','#111111');
             this.color.style.setProperty('--textTitle','#EEEEEE');
             this.color.style.setProperty('--textcolor','#B4B4B4');
+
+            this.color.style.setProperty('--figma','#EEEEEE');
+            this.color.style.setProperty('--canva','#EEEEEE');
+            this.color.style.setProperty('--html','#EEEEEE');
+            this.color.style.setProperty('--css','#EEEEEE');
+            this.color.style.setProperty('--js','#EEEEEE');
+            this.color.style.setProperty('--android','#EEEEEE');
+            this.color.style.setProperty('--php','#EEEEEE');
+            this.color.style.setProperty('--java','#EEEEEE');
+            this.color.style.setProperty('--postrgessql','#EEEEEE');
+            this.color.style.setProperty('--python','#EEEEEE');
+            this.color.style.setProperty('--github','#EEEEEE');
         }
     }
 
