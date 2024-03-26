@@ -31,16 +31,28 @@ Init
     --postrgessql: #EEEEEE;
     --python: #EEEEEE;
     --github: #EEEEEE;
+
+    --fondlight1: ;
+    --fondlight2: ;
 }
 
+.colorh1{
+    background: linear-gradient(92.29deg, #287DD1 0%, #1AE5FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
 #test1{
-    background-color: var(--background);
+    background-color: var(--fondlight1);
     border-radius: 0 0 50% 50% / 0 0 5em 5em;
 }
 
 #test2{
     z-index: -1;
-    background-color: #111111;
+    background-color: var(--fondlight2);
     height: 34.5em;
     position: relative;
     bottom: 5em;

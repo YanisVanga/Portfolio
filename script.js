@@ -5,6 +5,8 @@ class Script{
         this.imgBtnDarkMode = document.getElementById("imgBtnDarkMode");
         this.btnDarkMode = document.getElementById("darkModeBtn");
 
+        this.bonj = document.getElementById("bonj");
+
         this.link1 = document.getElementById("link1");
         this.link2 = document.getElementById("link2");
         this.link3 = document.getElementById("link3");
@@ -98,6 +100,11 @@ class Script{
             this.color.style.setProperty('--github','#EEEEEE');
 
             this.container.style.display = "none";
+
+            this.color.style.setProperty('--fondlight1','#FCFCFC');
+            this.color.style.setProperty('--fondlight2','#111111');
+
+            this.bonj.classList.add("colorh1");
         }else{
             //Dark
             this.btnDarkMode.classList.add("modeDark");
@@ -117,6 +124,13 @@ class Script{
             this.color.style.setProperty('--postrgessql','#EEEEEE');
             this.color.style.setProperty('--python','#EEEEEE');
             this.color.style.setProperty('--github','#EEEEEE');
+
+            this.container.style.display = "block";
+
+            this.color.style.setProperty('--fondlight1','');
+            this.color.style.setProperty('--fondlight2','');
+
+            this.bonj.classList.remove("colorh1");
         }
     }
 
