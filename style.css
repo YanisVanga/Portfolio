@@ -32,8 +32,12 @@ Init
     --python: #EEEEEE;
     --github: #EEEEEE;
 
+    /*
+
     --fondlight1: ;
-    --fondlight2: ;
+    --fondlight2: ;*/
+
+    --logoContact: #EEEEEE;
 }
 
 .colorh1{
@@ -44,7 +48,7 @@ Init
     text-fill-color: transparent;
 }
 
-
+/*
 #test1{
     background-color: var(--fondlight1);
     border-radius: 0 0 50% 50% / 0 0 5em 5em;
@@ -57,7 +61,7 @@ Init
     position: relative;
     bottom: 5em;
 }
-
+*/
 
 
 *{
@@ -634,6 +638,14 @@ Contact
 .linkContact:hover,.linkContactCVDowload:hover{
     transform: scale(1.03);
     filter: drop-shadow(0px 0px 6px var(--flou));
+}
+
+.logo svg path,#githubCon path{
+    fill: var(--logoContact);
+}
+
+#cv path,#cvDown path,#mail path{
+    stroke: var(--logoContact);
 }
 
 /*

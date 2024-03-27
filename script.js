@@ -5,7 +5,7 @@ class Script{
         this.imgBtnDarkMode = document.getElementById("imgBtnDarkMode");
         this.btnDarkMode = document.getElementById("darkModeBtn");
 
-        this.bonj = document.getElementById("bonj");
+        this.titleCat = document.getElementsByClassName("titleCat");
 
         this.link1 = document.getElementById("link1");
         this.link2 = document.getElementById("link2");
@@ -83,6 +83,7 @@ class Script{
             this.btnDarkMode.classList.remove("modeDark");
             this.color.style.setProperty('--buttonBackground','#FFE500');
             this.color.style.setProperty('--background','#FCFCFC');
+            this.color.style.setProperty('--backgroudCard','#EEEEEE');
 
             this.color.style.setProperty('--textTitle','#202020');
             this.color.style.setProperty('--textcolor','#7B7B7B');
@@ -99,17 +100,22 @@ class Script{
             this.color.style.setProperty('--python','url(#linearPython)');
             this.color.style.setProperty('--github','#EEEEEE');
 
+            this.color.style.setProperty('--logoContact','#202020')
+
             this.container.style.display = "none";
 
             this.color.style.setProperty('--fondlight1','#FCFCFC');
             this.color.style.setProperty('--fondlight2','#111111');
 
-            this.bonj.classList.add("colorh1");
+            for(var i=0; i < this.titleCat.length; i++){
+                this.titleCat.item(i).classList.add("colorh1");
+            }
         }else{
             //Dark
             this.btnDarkMode.classList.add("modeDark");
             this.color.style.setProperty('--buttonBackground','#000000');
             this.color.style.setProperty('--background','#111111');
+            this.color.style.setProperty('--backgroudCard','#2A2A2A');
             this.color.style.setProperty('--textTitle','#EEEEEE');
             this.color.style.setProperty('--textcolor','#B4B4B4');
 
@@ -125,12 +131,16 @@ class Script{
             this.color.style.setProperty('--python','#EEEEEE');
             this.color.style.setProperty('--github','#EEEEEE');
 
+            this.color.style.setProperty('--logoContact','#EEEEEE')
+
             this.container.style.display = "block";
 
             this.color.style.setProperty('--fondlight1','');
             this.color.style.setProperty('--fondlight2','');
 
-            this.bonj.classList.remove("colorh1");
+            for(var i=0; i < this.titleCat.length; i++){
+                this.titleCat.item(i).classList.remove("colorh1");
+            }
         }
     }
 
